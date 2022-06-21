@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+    background: linear-gradient(-45deg,#f08e71,#ec6599,#6aeb4d,#59bbe2);
+    background-size: 400% 400%;
+    animation: change linear 8s infinite;
+}
+
+h1{
+    text-align: center;
+    color: #06203a;
+    margin-top: 2rem ;
+}
+
+label{
+    color: rgb(12, 110, 110);
+}
+
+input{
+    padding: .2rem;
+    width: 60%;
+}
+
+.container{
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    display: block;
+    top: 22%;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 1.5px dodgerblue solid; */
+    background-color: rgba(240, 198, 227, 0.671);
+    /* background-color: transparent; */
+}
+
+.section{
+    display: flex;
+    width: 100%;
+    /* border-bottom: 1.5px dodgerblue solid; */
+    padding: .5rem 0;
+    /* justify-content: space-between; */
+}
+
+.label-form{
+    display: block;
+    width: 30%;
+    border-right: 1.5px dodgerblue solid;
+    text-align: left;
+}
+
+.section-form{
+    margin: 0 auto;
+    border: 2.5px solid brown;
+    color: brown;
+    display: block;
+    height: 70px;
+}
+
+.section-form legend{
+    margin-left: -120px;
+}
+
+.section-form input{
+    margin-top: 10px;
+    display: inline-block;
+    width: 20%;
+}
+
+
+.section-form label{
+    padding-left: 10px;
+}
+
+.btn{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #06203a;
+    color: white;
+}
+
+.alert{
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}
